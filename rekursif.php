@@ -12,17 +12,8 @@ rekursif(5);
 
 /*===================================================================================*/
 
-<form class="" action="TA1_6701170104_Rafata Baharansyah.php" method="post">
-  Batas Piramida<input type="number" name="bts"><br>
-  <input type="submit" name="submit">
-</form>
-
 <?php
 
-  if (isset($_POST['submit'])) {
-      $batas = $_POST['bts'];
-      piramidaRekursif(0,$batas);
-  }
 
   function piramidaRekursif($i = 0, $bts = 5){
     echo "*";
@@ -37,6 +28,8 @@ rekursif(5);
       }
     }
   }
+
+  piramidaRekursif(0,5);
 
 echo "<br>";
 /*==========================================================================*/
